@@ -6,19 +6,6 @@ $(document).ready(function(){
 		$('body,html').animate({ scrollTop: 0}, 1000);
 	});
 
-    $('#contactScroll').click(function (){
-			scrollToAnchor('jump-to-contact');
-			//Make button colors animate
-			setTimeout(function(){
-				$('.contact-column a').addClass('animate_contacts');
-			}, 1000);
-			setTimeout(function(){
-				$('.contact-column a').removeClass('animate_contacts');
-			}, 2000);
-			return false;
-
-    });
-
 	$(window).scroll(function() {
 
 				  var height = $(window).scrollTop();
