@@ -1,9 +1,9 @@
 var express = require('express')
 var app = express()
 
-// var bodyParser = require('body-parser');
-// app.use(bodyParser.json()); // to support JSON bodies
-// app.use(bodyParser.urlencoded({ extended: true })); // to support URL-encoded bodies
+var bodyParser = require('body-parser');
+app.use(bodyParser.json()); // to support JSON bodies
+app.use(bodyParser.urlencoded({ extended: true })); // to support URL-encoded bodies
 
 
 var guests = [];
