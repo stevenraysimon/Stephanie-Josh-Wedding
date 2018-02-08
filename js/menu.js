@@ -77,6 +77,18 @@ $(document).ready(function(){
     });
   });
 
+  $('#rsvp').click(function (){
+    $(".blackCover").fadeOut(anTime);
+    $('.main_menu').animate({
+      left: "-300px"
+    }, anTime);
+    open = 0;
+    $('.main_menu').promise().done(function(){
+      scrollToAnchor('rsvp_scrollTo');
+      return false;
+    });
+  });
+
 
 
 }); //Close Doc ready
