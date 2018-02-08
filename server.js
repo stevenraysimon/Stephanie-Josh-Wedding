@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
   res.sendfile(fileToSend, {root: './public'}); // Files inside "public" folder
 })
 
-app.get('/', function(req, res){
+app.get('/rsvp', function(req, res){
   console.log(req.query.textfield);
   res.send(req.query.textfield);
   res.send(req.body.optradio);
