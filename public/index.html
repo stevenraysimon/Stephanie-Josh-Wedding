@@ -120,17 +120,17 @@
     <a name="rsvp_scrollTo"></a>
     <h1>RSVP</h1>
     <p class="lightPadTop">Let us know that you can make it!</p>
-    <form method="GET" action="/rsvp">
-          <input type="text" name="firstname" placeholder="Name"><br>
+    <form method="POST" action="/rsvp">
+          <input type="text" name="name" placeholder="Name"><br>
           <label class="radio_container"><span class="afterBullet">Yes, I will be attending</span>
-            <input type="radio" name="radio">
+            <input type="radio" name="radio" value="Yes">
             <span class="checkmark"></span>
-            <!---------->
+
             <label class="radio_container"><span class="afterBullet">Decline with regrets</span>
-              <input type="radio" name="radio">
+              <input type="radio" name="radio" value="No">
               <span class="checkmark"></span>
           </label>
-          <input id="submit" type="submit" value="Submit">
+          <input id="submit" type="submit" name="submitbutton" value="Submit">
     </form>
     <!--Add buttons to initiate auth sequence and sign out-->
     <button id="authorize-button" style="display: none;">Authorize</button>
