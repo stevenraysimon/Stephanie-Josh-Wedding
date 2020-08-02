@@ -1,2 +1,2 @@
-# stevenraysimon.github.io
+# Stephanie & Josh Wedding
 Stephanie &amp; Josh Wedding
